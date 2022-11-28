@@ -3,12 +3,24 @@ body {
 }
 * {
     box-sizing: border-box;
+    margin:0;
+    padding:0;
 }
-
+a,li {
+    cursor: pointer;
+}
 /* Style of header */
 div.header {
     background-color:white;
+    box-shadow: 0 1px 10px black;
+    z-index:2;
+    position: relative;
 }
+div.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 div.header ul{
     list-style-type: none;
     margin: 0;
@@ -90,26 +102,76 @@ div.header a.rightButton{
 /* Style of navigation bar */
 div.nav_bar{
     clear:both;
-    background-color:black;
+    background-color:#282a35;
     color:white;
-    height:3em;
     position:sticky;
     top:0;
+    position: relative;
+    z-index: 1;
 }
-div.column {
+div.nav_bar nav{
     display:flex;
+    box-shadow: 0 1px 10px black;
 }
-div.column > .left-sidebar {
-    background-color: aqua;
-    flex-basis:300px;
+div.nav_bar nav ul li{
+    list-style-type: none;
+    display: inline-block;
 }
-div.column > .middle-sidebar {
-    background-color: yellow;
-    flex-grow:1;
-    height:100em;
-    font-size:30px;
+div.nav_bar nav ul li:hover{
+    background-color: #000000;
 }
-div.column > .right-sidebar {
-    background:pink;
-    flex-basis: 300px;
+div.nav_bar nav ul li.icon{
+    padding: 0.8em 1em 0.8em 1em;
+}
+div.nav_bar nav ul li.text{
+    padding: 1.25em 1.3em 1.1em 1.3em
+}
+div.nav_bar nav ul li:nth-last-child(3) {
+    margin-left:8.7em;
+}
+div.nav_bar nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+div.nav_bar nav ul li a span{
+    font-size: 2rem;
+    vertical-align: middle;
+}
+div.nav_bar nav ul li.CSS{
+    background-color: #04aa6d;
+}
+div.nav_bar nav ul li.drop_down{
+    position: relative;
+}
+div.nav_bar nav ul li.drop_down:hover .drop_content{
+    height: 6rem;
+}
+div.nav_bar nav ul div.drop_content{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 290%;
+    background-color: #282a35;
+    color: white;
+    height: 0rem;
+    transition: height 0.1s;
+}
+div.nav_bar nav ul div.drop_content a{
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+    font-weight: normal;
+    padding: 0.7em 1em;
+}
+div.nav_bar nav ul div.drop_content a:first-child{
+    padding-bottom: 0;
+}
+div.nav_bar nav ul div.drop_content a span{
+    font-size: 1rem;
+    background-color: white;
+    vertical-align: baseline;
+    margin-right: 0.5em;
 }
