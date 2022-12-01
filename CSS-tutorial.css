@@ -100,56 +100,57 @@ div.header a.rightButton{
 }
 
 /* Style of navigation bar */
-div.nav_bar{
+nav.nav_bar{
     clear:both;
     background-color:#282a35;
     color:white;
-    position:sticky;
-    top:0;
     position: relative;
     z-index: 1;
+    position:sticky;
+    top:0;
 }
-div.nav_bar nav{
+nav.nav_bar ul{
     display:flex;
     box-shadow: 0 1px 10px black;
+    align-items: center;
+    height: 4rem;
 }
-div.nav_bar nav ul li{
+nav.nav_bar ul li{
     list-style-type: none;
-    display: inline-block;
 }
-div.nav_bar nav ul li:hover{
+nav.nav_bar ul li:hover{
     background-color: #000000;
 }
-div.nav_bar nav ul li.icon{
+nav.nav_bar ul li.icon{
     padding: 0.8em 1em 0.8em 1em;
 }
-div.nav_bar nav ul li.text{
+nav.nav_bar ul li.text{
     padding: 1.25em 1.3em 1.1em 1.3em
 }
-div.nav_bar nav ul li:nth-last-child(3) {
-    margin-left:8.7em;
+nav.nav_bar ul li:nth-last-child(3) {
+    margin-left: auto;
 }
-div.nav_bar nav ul li a{
+nav.nav_bar ul li a{
     color: white;
     text-decoration: none;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 1.3rem;
 }
-div.nav_bar nav ul li a span{
+nav.nav_bar ul li a span{
     font-size: 2rem;
-    vertical-align: middle;
+    padding-top: 0.3rem;
 }
-div.nav_bar nav ul li.CSS{
+nav.nav_bar ul li.CSS{
     background-color: #04aa6d;
 }
-div.nav_bar nav ul li.drop_down{
+nav.nav_bar ul li.drop_down{
     position: relative;
 }
-div.nav_bar nav ul li.drop_down:hover .drop_content{
+nav.nav_bar ul li.drop_down:hover .drop_content{
     height: 6rem;
 }
-div.nav_bar nav ul div.drop_content{
+nav.nav_bar ul div.drop_content{
     position: absolute;
     left: 0;
     top: 100%;
@@ -157,21 +158,74 @@ div.nav_bar nav ul div.drop_content{
     background-color: #282a35;
     color: white;
     height: 0rem;
+    overflow: hidden;
     transition: height 0.1s;
 }
-div.nav_bar nav ul div.drop_content a{
+nav.nav_bar ul div.drop_content a{
     display: block;
     font-family: 'Inter', sans-serif;
     font-size: 1.3rem;
     font-weight: normal;
     padding: 0.7em 1em;
 }
-div.nav_bar nav ul div.drop_content a:first-child{
+nav.nav_bar ul div.drop_content a:first-child{
     padding-bottom: 0;
 }
-div.nav_bar nav ul div.drop_content a span{
+nav.nav_bar ul div.drop_content a span{
     font-size: 1rem;
     background-color: white;
     vertical-align: baseline;
     margin-right: 0.5em;
+}
+/* Style of left side bar */
+.flex-column{
+    display: flex;
+    background-color: #e7e9eb;
+}
+
+.flex-column .left-sidebar{
+    background-color: #e7e9eb;
+    width: 19rem;
+    max-height: 62rem;
+    position: sticky;
+    top: 4.3rem;
+    overflow: auto;
+    flex-shrink: 0;
+}
+.flex-column .left-sidebar p{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7rem;
+    font-weight: thin;
+    padding: 1em;
+    padding-top: 1.2em;
+    padding-bottom: 0.35em;
+}
+.flex-column .left-sidebar a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    padding: 0.3em 1.45em;
+}
+.flex-column .left-sidebar a:hover{
+    background-color: #cccccc;
+}
+.flex-column .left-sidebar a.selected{
+    background-color: #04aa6d;
+    color: white;
+}
+
+/* Style of middle content */
+.flex-column .main{
+    background-color: red;
+    height: 200rem;
+    flex-grow: 1;
+}
+
+/* Style of right side bar */
+.flex-column .right-sidebar{
+    background-color: green;
+    width:20rem;
+    flex-shrink: 0;
 }
