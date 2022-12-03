@@ -101,7 +101,6 @@ div.header a.rightButton{
 
 /* Style of navigation bar */
 nav.nav_bar{
-    clear:both;
     background-color:#282a35;
     color:white;
     position: relative;
@@ -186,7 +185,7 @@ nav.nav_bar ul div.drop_content a span{
 .flex-column .left-sidebar{
     background-color: #e7e9eb;
     width: 19rem;
-    max-height: 62rem;
+    height: 95vh;
     position: sticky;
     top: 4.3rem;
     overflow: auto;
@@ -218,14 +217,65 @@ nav.nav_bar ul div.drop_content a span{
 
 /* Style of middle content */
 .flex-column .main{
-    background-color: red;
+    background-color: white;
     height: 200rem;
     flex-grow: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: thin;
 }
+.main p.head{
+    font-size: 4rem;
+    font-weight: 100;
+    padding: 0.8em;
+    padding-bottom: 0.4em;
+}
+.container-head{
+    display: flex;
+}
+.main .button{
+    background-color: #04aa6d;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+}
+.main .button:hover{
+    background-color:#059862;
+}
+.container-head .button{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.8em 1em;
+}
+.container-head .left{
+    margin-left: 1.7em;
+}
+.container-head .right{
+    margin-left: auto;
+    margin-right: 1.7em;
+}
+.main .container-head .icon{
+    display:inline-block;
+    vertical-align: -2px;
+    font-weight:900;
+}
+.main .start{
+    font-size: 1.4rem;
+    background-color: #d9eee1;
+    margin:0;
+    margin-top:2.2rem;
+    border: 1px solid;
+}
+.main .start p{
+    padding: 0.7em 2em;
+}
+.main .start p:first-child{
+    margin-top: 2em;
+}
+
 
 /* Style of right side bar */
 .flex-column .right-sidebar{
     background-color: green;
-    width:20rem;
+    width:14.5%;
     flex-shrink: 0;
 }
