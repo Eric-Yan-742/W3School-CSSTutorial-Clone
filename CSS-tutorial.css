@@ -179,10 +179,10 @@ nav.nav_bar ul div.drop_content a span{
 /* Style of left side bar */
 .flex-column{
     display: flex;
-    background-color: #e7e9eb;
+    background-color: white;
 }
 
-.flex-column .left-sidebar{
+.left-sidebar{
     background-color: #e7e9eb;
     width: 19rem;
     height: 95vh;
@@ -191,7 +191,7 @@ nav.nav_bar ul div.drop_content a span{
     overflow: auto;
     flex-shrink: 0;
 }
-.flex-column .left-sidebar p{
+.left-sidebar p{
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.7rem;
@@ -200,28 +200,32 @@ nav.nav_bar ul div.drop_content a span{
     padding-top: 1.2em;
     padding-bottom: 0.35em;
 }
-.flex-column .left-sidebar a{
+.left-sidebar a{
     display: block;
     text-decoration: none;
     color: black;
     font-size: 1.2rem;
     padding: 0.3em 1.45em;
 }
-.flex-column .left-sidebar a:hover{
+.left-sidebar a:hover{
     background-color: #cccccc;
 }
-.flex-column .left-sidebar a.selected{
+.left-sidebar a.selected{
     background-color: #04aa6d;
     color: white;
 }
 
 /* Style of middle content */
-.flex-column .main{
+.main{
     background-color: white;
-    height: 200rem;
     flex-grow: 1;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: thin;
+    border: 2px solid #f1f1f1;
+}
+.main .main-divide {
+    border: 1px solid #eeeeee;
+    margin: 2rem 1rem;
 }
 .main p.head{
     font-size: 4rem;
@@ -229,21 +233,22 @@ nav.nav_bar ul div.drop_content a span{
     padding: 0.8em;
     padding-bottom: 0.4em;
 }
+
 .container-head{
     display: flex;
 }
-.main .button{
+.main .button{ /*Style of all buttons element in main content*/
     background-color: #04aa6d;
     color: white;
     text-decoration: none;
     border-radius: 7px;
+    font-weight: 700;
 }
 .main .button:hover{
     background-color:#059862;
 }
 .container-head .button{
     font-size: 1.5rem;
-    font-weight: 700;
     padding: 0.8em 1em;
 }
 .container-head .left{
@@ -259,23 +264,50 @@ nav.nav_bar ul div.drop_content a span{
     font-weight:900;
 }
 .main .start{
-    font-size: 1.4rem;
     background-color: #d9eee1;
     margin:0;
     margin-top:2.2rem;
-    border: 1px solid;
 }
-.main .start p{
+.main p.text{ /*Style of all text element in main content*/
     padding: 0.7em 2em;
+    font-size: 1.4rem;
 }
 .main .start p:first-child{
-    margin-top: 2em;
+    padding-top: 3em;
+}
+.main .start a {
+    display: inline-block;
+    padding: 0.7em 1.3em 0.7em 1.5em;
+    margin-top:0.7em;
+    margin-left:2em;
+    margin-bottom:2.2em;
+    font-size:1.6rem;
+}
+.main .start a .icon {
+    display: inline-block;
+    vertical-align: -5px;
+    font-size:1.3rem;
+    font-weight: 100;
+}
+.main .title {
+    font-size: 2.7rem;
+    margin: 1em 1em 0.5em 1em;
 }
 
 
 /* Style of right side bar */
 .flex-column .right-sidebar{
-    background-color: green;
     width:14.5%;
     flex-shrink: 0;
+    border-bottom: 2px solid #f1f1f1;
+    background-color: yellow;
 }
+
+
+
+.footer{
+    height:300px;
+    background-color: green;
+}
+
+
