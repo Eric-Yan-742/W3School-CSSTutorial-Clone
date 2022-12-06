@@ -16,46 +16,56 @@ body {
 a,li {
     cursor: pointer;
 }
+
+/* style of all links of the pages */
+.link {
+    color: black;
+
+}
+.link:hover {
+    color: #059862;
+}
+
 /* Style of header */
-div.header {
+.header {
     background-color:white;
     box-shadow: 0 1px 10px black;
     z-index:2;
     position: relative;
     grid-area: header;
 }
-div.clearfix::after {
+.clearfix::after {
     content: "";
     clear: both;
     display: table;
 }
-div.header ul{
+.header ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-div.header ul li{
+.header li{
     float:left;
 }
-div.header a{
+.header a{
     text-decoration: none;
     font-size:1.5rem;
     display:block;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
-/* Style of header button on the left */
-div.header a.leftButton{
+    /* Style of header button on the left */
+.header .leftButton{
     background-color: white;
     color:black;
     padding:1.5em 0.5em 1.5em 1em;
     text-align: center;
 }
-div.header a.leftButton:hover {
+.header .leftButton:hover {
     background-color: #04aa6d;
     color: white;
 }
-div.header a.leftButton i{
+.header .leftButton i{
     font-size: 1.8em;
     vertical-align: middle;
 }
@@ -67,11 +77,11 @@ div.header a.leftButton i{
 #video{
     padding:1.75em 0.8em 1.9em 1em;
 }
-/* Style of header button on the right */
-div.header ul li:nth-last-child(-n+4) {
+    /* Style of header button on the right */
+.header li:nth-last-child(-n+4) {
     float:right;
 }
-div.header a.rightButton{
+.header .rightButton{
     margin: 1em 1em 1em 0.01em;
     border-radius: 1.5em;
     color:black;
@@ -108,7 +118,7 @@ div.header a.rightButton{
 }
 
 /* Style of navigation bar */
-nav.nav_bar{
+.nav_bar{
     background-color:#282a35;
     color:white;
     position: relative;
@@ -117,48 +127,48 @@ nav.nav_bar{
     top:0;
     grid-area: nav_bar;
 }
-nav.nav_bar ul{
+.nav_bar ul{
     display:flex;
     box-shadow: 0 1px 10px black;
     align-items: center;
     height: 4rem;
 }
-nav.nav_bar ul li{
+.nav_bar li{
     list-style-type: none;
 }
-nav.nav_bar ul li:hover{
+.nav_bar li:hover{
     background-color: #000000;
 }
-nav.nav_bar ul li.icon{
+.nav_bar li.icon{
     padding: 0.8em 1em 0.8em 1em;
 }
-nav.nav_bar ul li.text{
+.nav_bar li.text{
     padding: 1.25em 1.3em 1.1em 1.3em
 }
-nav.nav_bar ul li:nth-last-child(3) {
+.nav_bar li:nth-last-child(3) {
     margin-left: auto;
 }
-nav.nav_bar ul li a{
+.nav_bar a{
     color: white;
     text-decoration: none;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 1.3rem;
 }
-nav.nav_bar ul li a span{
+.nav_bar span{
     font-size: 2rem;
     padding-top: 0.3rem;
 }
-nav.nav_bar ul li.CSS{
+.nav_bar li.CSS{
     background-color: #04aa6d;
 }
-nav.nav_bar ul li.drop_down{
+.nav_bar li.drop_down{
     position: relative;
 }
-nav.nav_bar ul li.drop_down:hover .drop_content{
+.nav_bar li.drop_down:hover .drop_content{
     height: 6rem;
 }
-nav.nav_bar ul div.drop_content{
+.nav_bar .drop_content{
     position: absolute;
     left: 0;
     top: 100%;
@@ -169,24 +179,23 @@ nav.nav_bar ul div.drop_content{
     overflow: hidden;
     transition: height 0.1s;
 }
-nav.nav_bar ul div.drop_content a{
+.nav_bar .drop_content a{
     display: block;
-    font-family: 'Inter', sans-serif;
     font-size: 1.3rem;
     font-weight: normal;
     padding: 0.7em 1em;
 }
-nav.nav_bar ul div.drop_content a:first-child{
+.nav_bar .drop_content a:first-child{
     padding-bottom: 0;
 }
-nav.nav_bar ul div.drop_content a span{
+.nav_bar .drop_content span{
     font-size: 1rem;
     background-color: white;
     vertical-align: baseline;
     margin-right: 0.5em;
 }
-/* Style of left side bar */
 
+/* Style of left side bar */
 .left-sidebar{
     background-color: #e7e9eb;
     width: 19rem;
@@ -215,12 +224,15 @@ nav.nav_bar ul div.drop_content a span{
 .left-sidebar a:hover{
     background-color: #cccccc;
 }
-.left-sidebar a.selected{
+.left-sidebar .selected{
     background-color: #04aa6d;
     color: white;
 }
+.left-sidebar .selected:hover {
+    background-color: #04aa6d;
+}
 
-/* Style of middle content */
+/* Style of middle main content */
 .main{
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -230,21 +242,13 @@ nav.nav_bar ul div.drop_content a span{
     margin: 0;
     padding: 0;
 }
+    /*Style of all hrs in main content */
 .main .main-divide {
     border: 1px solid #eeeeee;
     margin: 2rem;
 }
-.main p.head{
-    font-size: 4rem;
-    font-weight: 100;
-    padding: 0.8em;
-    padding-bottom: 0.4em;
-}
-
-.container-head{
-    display: flex;
-}
-.main .button{ /*Style of all buttons element in main content*/
+    /*Style of all buttons element in main content*/
+.main .button{ 
     background-color: #04aa6d;
     color: white;
     text-decoration: none;
@@ -255,6 +259,39 @@ nav.nav_bar ul div.drop_content a span{
 .main .button:hover{
     background-color:#059862;
     color: white;
+}
+    /*Style of all text element in main content*/
+.main .text{ 
+    padding: 0.7em 2em;
+    font-size: 1.4rem;
+}
+    /*style of all icons in main content */
+.main .icon {
+    display: inline-block;
+    vertical-align: -5px;
+    font-size:1.3rem;
+    font-weight: 100;
+}
+    /*style of all titles in main content */
+.main .title {
+    font-size: 2.9rem;
+    margin: 1em 1em 0.5em 0.9em;
+}
+    /* Style of all subtitles in main content */
+.main .subtitle {
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.main .head{
+    font-size: 4rem;
+    font-weight: 100;
+    padding: 0.8em;
+    padding-bottom: 0.4em;
+}
+
+.container-head{
+    display: flex;
 }
 .container-head .button{
     font-size: 1.5rem;
@@ -267,23 +304,20 @@ nav.nav_bar ul div.drop_content a span{
     margin-left: auto;
     margin-right: 1.9em;
 }
-.main .container-head .icon{
+.container-head .icon{
     display:inline-block;
     vertical-align: -2px;
     font-weight:900;
 }
-.main .start{
+
+.start{
     background-color: #d9eee1;
     margin-top:2.2rem;
 }
-.main p.text{ /*Style of all text element in main content*/
-    padding: 0.7em 2em;
-    font-size: 1.4rem;
-}
-.main .start p:first-child{
+.start p:first-child{
     padding-top: 3em;
 }
-.main .start a {
+.start a {
     display: inline-block;
     padding: 0.7em 1.3em 0.7em 1.5em;
     margin-top:0.7em;
@@ -291,50 +325,38 @@ nav.nav_bar ul div.drop_content a span{
     margin-bottom:2.2em;
     font-size:1.6rem;
 }
-.main .icon {
-    display: inline-block;
-    vertical-align: -5px;
-    font-size:1.3rem;
-    font-weight: 100;
-}
-.main .title {
-    font-size: 2.9rem;
-    margin: 1em 1em 0.5em 0.9em;
-}
-.main .code-example {
+
+.code-example {
     background-color: #e7e9eb;
     border-radius: 0.5rem;
     margin: 1rem;
     padding: 2.4rem 1.8rem 2.5rem 1.8rem;
 }
-.main .subtitle {
-    font-size: 2.2rem;
-    margin-bottom: 1.2rem;
-}
-.main .code {
+.code {
     background-color: white;
     padding: 1rem;
     border-left: 7px solid #04aa6d;
     margin-bottom: 1.7rem;
 }
-.main .code pre {
+.code pre {
     font-size: 1.3rem;
     font-family: 'Work Sans', sans-serif;
     line-height: 1.7em;
 }
-.main .try {
+.try {
     padding: 0.7em 1em;
     font-size: 1.4rem;
     font-weight: bold;
 }
-.main .try .icon {
+.try .icon {
     margin-left: 5px;
 }
 .main .instruction {
     font-weight: 900;
     margin-bottom: 0.7em;
 }
-.main a.black-white {
+
+.main .black-white {
     color: black;
     background-color: #e7e9eb;
     padding: 0.8em 1em;
@@ -342,29 +364,26 @@ nav.nav_bar ul div.drop_content a span{
     margin-top: 1em;
     margin-left: 2em;
 }
+
 .main .char-icon {
     font-size: 2.2rem;
 }
-.link {
-    color: black;
 
-}
-.link:hover {
-    color: #059862;
-}
 .main .link {
     display: inline-block;
     font-size: 1.5rem;
     margin-left: 1.9em;
     margin-top: 0.5em;
 }
+
 .main .ref-grid {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 1.4rem;
     margin: 0.8rem 2.6rem 5rem 2.6rem;
 }
-.main .ref-grid a {
+
+.ref-grid a {
     display: block;
     text-decoration: none;
     color: #555555;
@@ -375,33 +394,34 @@ nav.nav_bar ul div.drop_content a span{
     border: 1px solid #e3e3e3;
     border-radius: 10px;
 }
-.main .ref-grid a:hover {
+.ref-grid a:hover {
     background-color: #282a35;
     color: white;
 }
-.main .get-start {
+
+.get-start {
     background-color: #282a35;
     padding: 6rem;
     margin: 3rem;
     border-radius: 20px;
     margin-bottom: 10rem;
 }
-.main .get-start p {
+.get-start p {
     color: #ffc0c7;
 }
-.main .get-start .title {
+.get-start .title {
     font-size: 4.5rem;
     font-weight: bold;
     padding-bottom: 1.4em;
     margin:0;
 }
-.main .get-start .subtitle {
+.get-start .subtitle {
     font-size: 3.5rem;
     font-weight: bold;
     margin: 0;
     padding-bottom: 1.4em;
 }
-.main .get-start .button {
+.get-start .button {
     font-size: 1.4rem;
     padding: 1.7em 4.2em;
     border-radius: 50px;
