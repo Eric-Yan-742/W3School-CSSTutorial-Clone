@@ -232,7 +232,7 @@ nav.nav_bar ul div.drop_content a span{
 }
 .main .main-divide {
     border: 1px solid #eeeeee;
-    margin: 2rem 1rem;
+    margin: 2rem;
 }
 .main p.head{
     font-size: 4rem;
@@ -254,17 +254,18 @@ nav.nav_bar ul div.drop_content a span{
 }
 .main .button:hover{
     background-color:#059862;
+    color: white;
 }
 .container-head .button{
     font-size: 1.5rem;
     padding: 0.8em 1em;
 }
 .container-head .left{
-    margin-left: 1.7em;
+    margin-left: 1.9em;
 }
 .container-head .right{
     margin-left: auto;
-    margin-right: 1.7em;
+    margin-right: 1.9em;
 }
 .main .container-head .icon{
     display:inline-block;
@@ -298,7 +299,7 @@ nav.nav_bar ul div.drop_content a span{
 }
 .main .title {
     font-size: 2.9rem;
-    margin: 1em 1em 0.5em 1em;
+    margin: 1em 1em 0.5em 0.9em;
 }
 .main .code-example {
     background-color: #e7e9eb;
@@ -332,6 +333,81 @@ nav.nav_bar ul div.drop_content a span{
 .main .instruction {
     font-weight: 900;
     margin-bottom: 0.7em;
+}
+.main a.black-white {
+    color: black;
+    background-color: #e7e9eb;
+    padding: 0.8em 1em;
+    font-size: 1.3rem;
+    margin-top: 1em;
+    margin-left: 2em;
+}
+.main .char-icon {
+    font-size: 2.2rem;
+}
+.link {
+    color: black;
+
+}
+.link:hover {
+    color: #059862;
+}
+.main .link {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-left: 1.9em;
+    margin-top: 0.5em;
+}
+.main .ref-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1.4rem;
+    margin: 0.8rem 2.6rem 5rem 2.6rem;
+}
+.main .ref-grid a {
+    display: block;
+    text-decoration: none;
+    color: #555555;
+    background-color: #e7e9eb;
+    text-align: center;
+    font-size:1.5rem;
+    padding: 1.4em 0;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+}
+.main .ref-grid a:hover {
+    background-color: #282a35;
+    color: white;
+}
+.main .get-start {
+    background-color: #282a35;
+    padding: 6rem;
+    margin: 3rem;
+    border-radius: 20px;
+    margin-bottom: 10rem;
+}
+.main .get-start p {
+    color: #ffc0c7;
+}
+.main .get-start .title {
+    font-size: 4.5rem;
+    font-weight: bold;
+    padding-bottom: 1.4em;
+    margin:0;
+}
+.main .get-start .subtitle {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 1.4em;
+}
+.main .get-start .button {
+    font-size: 1.4rem;
+    padding: 1.7em 4.2em;
+    border-radius: 50px;
+}
+#end_nav {
+    margin-bottom: 5rem;
 }
 
 
