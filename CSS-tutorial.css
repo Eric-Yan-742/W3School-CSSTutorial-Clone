@@ -6,7 +6,7 @@ body {
         'nav_bar nav_bar nav_bar'
         'left_side_bar main right_side_bar'
         'left_side_bar footer footer';
-    grid-template-columns: 19rem auto 14.5%;
+    grid-template-columns: 21rem 1fr 14.5%;
 }
 * {
     box-sizing: border-box;
@@ -17,13 +17,27 @@ a,li {
     cursor: pointer;
 }
 
-/* style of all links of the pages */
+/* style of all links of the page */
 .link {
     color: black;
+    display: block;
 
 }
 .link:hover {
     color: #059862;
+}
+
+/*Style of all buttons of the page */
+.button {
+    background-color: #04aa6d;
+    color: white;
+    text-decoration: none;
+    font-weight: 700; 
+    display: inline-block;
+}
+.button:hover {
+    background-color:#059862;
+    color: white;
 }
 
 /* Style of header */
@@ -198,7 +212,7 @@ a,li {
 /* Style of left side bar */
 .left-sidebar{
     background-color: #e7e9eb;
-    width: 19rem;
+    width: 100%;
     height: 95vh;
     position: sticky;
     top: 4.3rem;
@@ -249,16 +263,7 @@ a,li {
 }
     /*Style of all buttons element in main content*/
 .main .button{ 
-    background-color: #04aa6d;
-    color: white;
-    text-decoration: none;
     border-radius: 7px;
-    font-weight: 700;
-    display: inline-block;
-}
-.main .button:hover{
-    background-color:#059862;
-    color: white;
 }
     /*Style of all text element in main content*/
 .main .text{ 
@@ -378,7 +383,7 @@ a,li {
 
 .main .ref-grid {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1.4rem;
     margin: 0.8rem 2.6rem 5rem 2.6rem;
 }
@@ -436,9 +441,46 @@ a,li {
     border-bottom: 2px solid #f1f1f1;
     grid-area: right_side_bar;
 }
+.right-sidebar img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+#make-progress {
+    width: 68%;
+    margin: 5rem auto 5rem auto;
+}
+.right-sidebar .link {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: .5rem;
+}
+#hexagon {
+    width: 40%;
+    margin-bottom: 2rem;
+}
+#get-certified {
+    width: 95%;
+    border-radius: 10px 10px 0 0;
+}
+.right-sidebar .button {
+    font-size: 1.5rem;
+    width: 95%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding: 1em;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 3rem;
+}
+#visual-learner {
+    width: 68%;
+    border-radius: 10px;
+}
 
-
-
+/* Style of footer */
 .footer{
     height:300px;
     grid-area: footer;
