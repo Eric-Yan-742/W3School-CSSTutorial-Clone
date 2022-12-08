@@ -39,6 +39,11 @@ a,li {
     background-color:#059862;
     color: white;
 }
+/*Style of all hrs */
+.divider {
+    border: 1px solid #eeeeee;
+    margin: 2rem;
+}
 
 /* Style of header */
 .header {
@@ -256,11 +261,7 @@ a,li {
     margin: 0;
     padding: 0;
 }
-    /*Style of all hrs in main content */
-.main .main-divide {
-    border: 1px solid #eeeeee;
-    margin: 2rem;
-}
+    
     /*Style of all buttons element in main content*/
 .main .button{ 
     border-radius: 7px;
@@ -443,8 +444,7 @@ a,li {
 }
 .right-sidebar img{
     display: block;
-    margin-right: auto;
-    margin-left: auto;
+    margin: auto;
 }
 #make-progress {
     width: 68%;
@@ -468,8 +468,7 @@ a,li {
     font-size: 1.5rem;
     width: 95%;
     display: block;
-    margin-right: auto;
-    margin-left: auto;
+    margin: auto;
     text-align: center;
     padding: 1em;
     border-radius: 0 0 10px 10px;
@@ -482,8 +481,81 @@ a,li {
 
 /* Style of footer */
 .footer{
-    height:300px;
     grid-area: footer;
+    height: 69rem;
+}
+.footer hr:first-child {
+    margin-top: 5rem;
+}
+.button-wrapper {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    width: 93%;
+    margin: auto;
+}
+.button-wrapper .button {
+    font-size: 1.4rem;
+    text-align: center;
+    border-radius: 5px;
+    padding: .7em 0;
+    background-color: #282a35;
+}
+.button-wrapper .button:hover {
+    background-color: #059862;
+}
+.reference-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 95%;
+    margin: auto;
+}
+.reference-wrapper p {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1em;
+}
+.reference-wrapper a {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom:.2em;
+}
+.reference-wrapper a:hover {
+    text-decoration-line: underline;
+}
+.bottom {
+    width: 95%;
+    margin: auto;
+}
+.bottom .link {
+    display: inline;
+}
+.bottom a, .bottom p {
+    color:#666666;
 }
 
-
+.corner-note {
+    display: flex;
+    margin-bottom: 2rem;
+}
+#note-block {
+    margin-left: auto;
+    /* margin-right: 3.5em; */
+    font-size: 1.1rem;
+}
+.bottom-note {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+.bottom-note p {
+    text-align: center;
+}
+.bottom-note a:hover {
+    text-decoration-line: underline;
+}
+.bottom #home-image {
+    display: block;
+    margin: auto;   
+}
