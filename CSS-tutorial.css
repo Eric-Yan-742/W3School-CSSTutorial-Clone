@@ -88,6 +88,9 @@ a,li {
     font-size: 1.8em;
     vertical-align: middle;
 }
+#menu {
+    display: none;
+}
 #home-image{
     height:80px;
     width:95px;
@@ -180,6 +183,9 @@ a,li {
 }
 .nav_bar li.CSS{
     background-color: #04aa6d;
+}
+.nav_bar .menu {
+    display: none;
 }
 .nav_bar li.drop_down{
     position: relative;
@@ -382,7 +388,7 @@ a,li {
     margin-top: 0.5em;
 }
 
-.main .ref-grid {
+.ref-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.4rem;
@@ -558,4 +564,156 @@ a,li {
 .bottom #home-image {
     display: block;
     margin: auto;   
+}
+
+/* Responsive styling */
+@media only screen and (max-width: 2100px) {
+    #django {
+        display:none;
+    }
+}
+@media only screen and (max-width: 2000px) {
+    #jquery {
+        display:none;
+    }
+}
+@media only screen and (max-width: 1900px) {
+    #r {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1800px) {
+    #react {
+        display: none;
+    }
+    #upgrade {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1700px) {
+    #Cs {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1600px) {
+    #Cpp {
+        display: none;
+    }
+    #certified {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1500px) {
+    #C {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    #W3 {
+        display: none;
+    }
+    #freeWebsite {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    #HowTo {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    #bootstrap {
+        display: none;
+    }
+    #video {
+        display: none;
+    }
+    body {
+        display:grid;
+        grid-template-areas: 
+            'header'
+            'nav_bar'
+            'main'
+            'right_side_bar'
+            'footer';
+        grid-template-columns:100%;
+    }
+    #make-progress {
+        width: 20rem;
+    }
+    #hexagon {
+        width: 8rem;
+    }
+    #get-certified {
+        width: 20rem;
+    }
+    .right-sidebar .button {
+        width: 20rem;
+    }
+    #visual-learner {
+        width: 20rem;
+    }
+    .nav_bar .menu {
+        display: inline-block;
+    }
+    #menu-icon {
+        font-weight: 700;
+    }
+    .button-wrapper {
+        grid-template-columns:1fr;
+        gap: 5px;
+    }
+    .reference-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    #php {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    #exercise {
+        display: none;
+    }
+    #java {
+        display: none;
+    }
+}
+@media only screen and (max-width: 900px) {
+    #python {
+        display: none;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #reference {
+        display: none;
+    }
+    #tutorial {
+        display: none;
+    }
+    #menu {
+        display:block
+    }
+}
+@media only screen and (max-width: 700px) {
+    #sql {
+        display: none;
+    }
+    .reference-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (max-width: 650px) {
+    #javascript {
+        display: none;
+    }
+    .ref-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .CSS {
+        display: none;
+    }
 }
